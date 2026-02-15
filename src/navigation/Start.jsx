@@ -5,8 +5,8 @@ import ProfilePlaceholder from '../assets/profile-placeholder.jpg'
 function Start() {
 
   return (
-    <div className="h-dvh bg-[#F6F6F6] pt-24 p-2">
-      <div className="w-px h-dvh border-[1.5px] border-emerald-700 absolute left-20"></div>
+    <div className="h-fit bg-[#F6F6F6] pt-24 p-2">
+      <div className="w-px h-1000 border-[1.5px] border-emerald-700 absolute left-20"></div>
 
       <div className="ml-22">
         <p className="text-neutral-500 text-xl">{"<Start />"}</p>

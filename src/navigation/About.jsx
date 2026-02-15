@@ -12,10 +12,8 @@ function About() {
   ]
 
   return (
-    <div className="h-dvh bg-[#F6F6F6] pt-4 pl-2 pr-2">
-      <div className="w-px h-dvh border-[1.5px] border-emerald-700 absolute left-20"></div>
-
-      <p className="text-neutral-500 text-xl ml-22 mb-5">{"<About />"}</p>
+    <div className="h-fit bg-[#F6F6F6] pl-2 pr-2">
+      <p className="text-neutral-500 text-xl ml-22 mb-5 pt-70">{"<About />"}</p>
       <div className="flex flex-row gap-5">
         <div>
           <pre className="m-0 p-0 w-full hover:bg-emerald-100">
@@ -91,7 +89,7 @@ function About() {
             </code>
           </pre>
           <pre className="m-0 p-0 w-full hover:bg-emerald-100">
-            <code className="px-10 py-0"><span className="select-none">19    </span>      {"{"}<span className="text-red-500">Languages</span>: 'C', 'C++', 'Java', 'Javascript', 'HTML', 'CSS'{"}"},
+            <code className="px-10 py-0"><span className="select-none">19    </span>      {"{"}<span className="text-red-500">Languages</span>: 'C', 'C++', 'Java', 'Javascript', 'HTML', 'CSS', 'Move'{"}"},
             </code>
           </pre>
           <pre className="m-0 p-0 w-full hover:bg-emerald-100">
@@ -120,16 +118,16 @@ function About() {
           </pre>
         </div>
 
-        <div className="flex gap-5 flex-col w-150">
+        <div className="flex gap-5 flex-col w-150 justify-center">
           {
             divBoxId.map((box) => {
               const [isHover, setIsHover] = useState(false)
               
               return (
               <div className="relative inline-block">
-                <div className={`absolute inset-0 border-0 border-b-2 border-r-2 border-emerald-700 translate-1 translate-y-1 rounded-2xl z-0 ${isHover ? 'translate-2 translate-y-3 translate-z-3' : ''} transition-all duration-300 ease-in-out`}></div>
+                <div className={`absolute inset-0 border-0 border-b-3 border-r-3 border-emerald-700 translate-1 translate-y-1 rounded-2xl z-0 ${isHover ? 'translate-2 translate-y-3 translate-z-3' : ''} transition-all duration-300 ease-in-out`}></div>
                 <div key={box.id} onMouseEnter={() => {setIsHover(true)}} onMouseLeave={() => {setIsHover(false)}} className={`relative z-1 rounded-2xl p-2 transition-transform duration-300 ease-in-out bg-[#F6F6F6]`}>
-                  <p className={`${isHover ? '-translate-5 -translate-y-1 scale-105' : ''} transition-all duration-300 ease-in-out`}>
+                  <p className={`${isHover ? '-translate-5 -translate-y-1 scale-105 drop-shadow-emerald-700' : 'drop-shadow-emerald-900/10'} drop-shadow-2xl  transition-all duration-300 ease-in-out text-justify`}>
                     {box.text}
                   </p>
                 </div>
