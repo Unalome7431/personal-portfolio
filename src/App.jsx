@@ -16,6 +16,10 @@ function App() {
       <About />
       <Experience />
       <Work />
+      <Contact />
+      <div className="h-15 w-full bg-[#F8F6F4] shadow-2xl shadow-black shadow-t border-t border-emerald-700 flex items-center justify-center">
+        <p className='text-emerald-700 font-extrabold font-mono text-center items-center'>Deisgned and Build by Velengio Deriksen Charles - 2026</p>
+      </div>
     </>
   )
 }

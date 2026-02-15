@@ -8,18 +8,18 @@ function ExperienceCard({ title, orgs, desc, label, timeline }) {
       <div className="flex flex-col justify-around">
         <div className="flex flex-col gap-2 w-180">
           <div>
-            <h3 className="text-emerald-700 text-3xl font-bold">{title}</h3>
-            <h4 className="text-emerald-600 text-xl font-semibold">{orgs}</h4>
+            <h3 className="text-emerald-700 text-2xl font-extralight font-silkscreen">{title}</h3>
+            <h4 className="text-emerald-600 text-xl font-extralight font-mono">{orgs}</h4>
           </div>
-          <p>{desc}</p>
+          <p className="font-mono">{desc}</p>
         </div>
 
-        <div className="bg-emerald-700 text-white font-medium w-40 p-2 rounded-2xl text-center">
+        <div className="bg-emerald-700 text-white font-silkscreen w-40 p-2 rounded-2xl text-center">
           {label}
         </div>
       </div>
 
-      <span className={`flex items-center text-emerald-700 font-bold text-5xl transition-all duration-300 ease-in ${isHover ? 'opacity-100 m-4' : 'opacity-0'}`}>{timeline}</span>
+      <span className={`flex items-center text-emerald-700 font-bold font-mono text-5xl transition-all duration-300 ease-in ${isHover ? 'opacity-100 m-4' : 'opacity-0'}`}>{timeline}</span>
     </div>
   )
 }

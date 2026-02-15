@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Silkscreen:wght@400;700&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-bungee: "Bungee";
+  --font-zilla-slab: "Zilla Slab Highlight";
+  --font-silkscreen: "Silkscreen";
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   background-color: #F6F6F6;
+  overflow-x: hidden;
 }

@@ -6,16 +6,16 @@ function Start() {
 
   return (
     <div className="h-fit bg-[#F6F6F6] pt-24 p-2">
-      <div className="w-px h-1000 border-[1.5px] border-emerald-700 absolute left-20"></div>
+      <div className="w-px h-1170 border-[1.5px] border-emerald-700 absolute left-20"></div>
 
       <div className="ml-22">
-        <p className="text-neutral-500 text-xl">{"<Start />"}</p>
+        <p className="text-neutral-500 text-xl font-mono">{"<Start />"}</p>
 
         <div className="flex justify-between">
           <div>
             <div className="mt-50">
-              <p className="text-5xl">Hello, I'm <span className="text-emerald-700">Velengio Deriksen Charles</span></p>
-              <p className="text-4xl">I <span className="text-emerald-700">learn</span> and <span className="text-emerald-700">develop</span> stuff</p>
+              <p className="text-5xl font-mono">Hello, I'm <span className="text-emerald-700 font-extrabold font-zilla-slab">Velengio Deriksen Charles</span></p>
+              <p className="text-4xl font-mono">I <span className="text-emerald-700 font-bold font-bungee">learn</span> and <span className="text-emerald-700 font-bold font-silkscreen">develop</span> stuff</p>
             </div>
 
             <div className="mt-5 flex gap-2">
