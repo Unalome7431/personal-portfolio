@@ -25,14 +25,11 @@ function Start() {
             </div>
           </div>
 
-          <img className="w-100 mr-22 mt-20 transition-all duration-300 
+          <img className="w-100 mr-22 mt-20 transition-all duration-300 rounded-2xl
           filter-[invert(42%)_sepia(70%)_saturate(252%)_hue-rotate(100deg)_brightness(93%)_contrast(90%)] 
           hover:filter-none" src={ProfilePlaceholder} alt="Profile" />
         </div>
-        
-        
       </div>
-      
     </div>
   )
 }
