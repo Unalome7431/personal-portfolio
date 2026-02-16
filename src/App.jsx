@@ -36,6 +36,7 @@ function App() {
 
   return (
     <div className='relative'>
+      <title>{"<Velengio />"}</title>
       <NavBar activeSection={activeSection} />
       <section id='Start'><Start /></section>
       <section id='About' className='-scroll-mt-40'><About /></section>
