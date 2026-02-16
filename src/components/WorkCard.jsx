@@ -15,8 +15,8 @@ function WorkCard({ title, desc, onGithubClick, onLinkClick, imgSrc }) {
 
       <div className="p-3 flex flex-col gap-2">
         <div>
-          <h3 className="font-medium font-silkscreen text-emerald-700">{title}</h3>
-          <p className="font-mono">{desc}</p>
+          <h3 className="font-medium font-rubik text-emerald-700">{title}</h3>
+          <p className="font-rubik">{desc}</p>
         </div>
 
         <div className="flex gap-2">

@@ -1,7 +1,16 @@
 import CustomButton from "../components/CustomButton"
-import { Globe, Earth } from "lucide-react"
+import { Earth } from "lucide-react"
 
 function Contact() {
+  const scrollToTop = () => {
+    const element = document.getElementById('Start');
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  };
 
   return (
     <div className="h-dvh pl-2 pr-2">
@@ -16,7 +25,7 @@ function Contact() {
 
           <div className="flex gap-4">
             <CustomButton text={"Say Hello"} />
-            <CustomButton text={"Back to Top"} />
+            <CustomButton text={"Back to Top"} onClickFunction={scrollToTop}/>
           </div>
         </div>
         <Earth className="scale-2700 text-neutral-200 mt-50 animate-[spin_10s_linear_infinite] hover:text-emerald-700 transition-all duration-300 ease-in-out" />

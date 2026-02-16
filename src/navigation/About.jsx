@@ -124,11 +124,11 @@ function About() {
               const [isHover, setIsHover] = useState(false)
               
               return (
-              <div className="relative inline-block">
+              <div key={box.id} className="relative inline-block">
                 <div className={`absolute inset-0 border-0 border-b-3 border-r-3 border-emerald-700 translate-1 translate-y-1 rounded-2xl z-0 ${isHover ? 'translate-2 translate-y-3 translate-z-3' : ''} transition-all duration-300 ease-in-out`}></div>
 
                 <div key={box.id} onMouseEnter={() => {setIsHover(true)}} onMouseLeave={() => {setIsHover(false)}} className={`relative z-1 rounded-2xl p-2 transition-transform duration-300 ease-in-out bg-[#F6F6F6]`}>
-                  <p className={`${isHover ? '-translate-5 -translate-y-1 scale-105 drop-shadow-emerald-700' : 'drop-shadow-emerald-900/10'} drop-shadow-2xl  transition-all duration-300 ease-in-out text-justify font-mono`}>
+                  <p className={`${isHover ? '-translate-5 -translate-y-1 scale-105 drop-shadow-emerald-700' : 'drop-shadow-emerald-900/10'} drop-shadow-2xl  transition-all duration-300 ease-in-out text-justify font-rubik`}>
                     {box.text}
                   </p>
                 </div>
